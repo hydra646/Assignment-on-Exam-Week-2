@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">My Awesome Site</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="cover">
+        <img src="cover.jpg" alt="Cover Image">
+        <div class="cover-overlay">
+            <h1>Welcome to Our World</h1>
+            <p>Discover amazing things here.</p>
+        </div>
+    </section>
+
+    <section class="cards-section">
+        <h2>Explore Our Features</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="Feature_01.jpg" alt="Feature 1">
+                <h3>Test your Coding Skills</h3>
+                <p>Empower your workflow with cutting-edge technology.</p>
+            </div>
+            <div class="card">
+                <img src="Feature_02.jpg" alt="Feature 2">
+                <h3>Find Coummunity</h3>
+                <p>Collaborate seamlessly with your team.</p>
+            </div>
+            <div class="card">
+                <img src="Feature_03.jpg" alt="Feature 3">
+                <h3>Ensure Security</h3>
+                <p>Keep your data safe and secure. Our robust security protocols and 24/7 support give you peace of mind, knowing your information is always protected.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <div class="error-message" id="nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="error-message" id="messageError"></div>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="successMessage" class="success-message" style="display:none;">Form submitted successfully!</div>
+            <div id="savedData" class="saved-data" style="display:none;"></div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Awesome Site</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
